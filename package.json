@@ -1,0 +1,33 @@
+{
+  "name": "wahbot-v2",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xRescueToast/wahbot-v2.git"
+  },
+  "author": "Sophie De Rensis-Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xRescueToast/wahbot-v2/issues"
+  },
+  "homepage": "https://github.com/xRescueToast/wahbot-v2#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.8.2",
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/rest": "^2.3.0",
+    "@discordjs/voice": "github:discordjs/voice",
+    "@web-scrobbler/metadata-filter": "^3.1.0",
+    "discord-api-types": "^0.37.87",
+    "discord-player": "^6.6.2",
+    "discord-player-deezer": "^1.0.1",
+    "discord.js": "^14.15.3",
+    "distube": "^5.0.1",
+    "ffmpeg-static": "^5.2.0",
+    "ytdl-core": "^4.11.5"
+  }
+}
