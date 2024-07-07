@@ -39,7 +39,7 @@ module.exports = {
 
 		let embed = new EmbedBuilder()
 
-
+        var song;
         //play song by url
 		if (interaction.options.getSubcommand() === "song") {
             let url = interaction.options.getString("url")
@@ -110,8 +110,8 @@ module.exports = {
             
 
             // Add the track to the queue
-            const song = result.tracks[0]
-            queue.addTrack(song.url + "")
+            song = result.tracks[0]
+            queue.addTrack(song.url)
             embed
                 .setDescription(`**[${song.title}](${song.url})** has been added to the Queue`)
                 .setThumbnail(song.thumbnail)
@@ -121,7 +121,8 @@ module.exports = {
         //play the song (surely this one works)
         //client.player.play(interaction.member.voice.channel, query)
         // Play the song
-        //if (!queue.isPlaying) await queue.node.play();
+        //if (!queue.isPlaying) await queue.node.play()
+        client.player.play(interaction.member.voice.channel, song)
         console.log(queue.node);
         
         
